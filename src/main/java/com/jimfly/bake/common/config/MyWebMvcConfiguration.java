@@ -27,7 +27,7 @@ public class MyWebMvcConfiguration implements WebMvcConfigurer {
      * @param registry
      */
     public void addViewControllers(ViewControllerRegistry registry) {
-        registry.addViewController("/").setViewName("forward:/login");
+        registry.addViewController("/").setViewName("index");
         registry.setOrder(Ordered.HIGHEST_PRECEDENCE);
     }
 
