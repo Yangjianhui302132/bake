@@ -37,7 +37,7 @@ spring:
         min-idle: 0
   #程序
   application:
-    name: jimfly-bake
+    name: bake
 
 
 
