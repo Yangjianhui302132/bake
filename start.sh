@@ -7,8 +7,6 @@ BASE_PATH=/usr/docker-jar
 #项目版本
 JAR_VERSION=0.0.1-SNAPSHOT
 echo "最新构建代码 $SOURCE_PATH/$SERVER_NAME/target/$SERVER_NAME-$JAR_VERSION.jar 迁移至 $BASE_PATH ...."
-#修改文件的权限
-chmod 777 $BASE_PATH
 #把项目从jenkins构建后的目录移动到我们的项目目录下同时重命名下
  mv $SOURCE_PATH/$SERVER_NAME/target/$SERVER_NAME-$JAR_VERSION.jar $BASE_PATH/$SERVER_NAME.jar
  echo "迁移完成"
